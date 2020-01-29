@@ -1,6 +1,9 @@
 package com.example.nikeassessment.viewmodel
 
-import androidx.lifecycle.*
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.example.nikeassessment.model.ListItem
 import com.example.nikeassessment.repository.SearchRepository
 import kotlinx.coroutines.launch
@@ -17,7 +20,6 @@ class SearchViewModel(private val searchRepository: SearchRepository = SearchRep
             _searchResults.value = res
         }
      }
-
 
     fun sortByThumbsUp(){
         _searchResults.value = _searchResults.value?.sortedByDescending { it.thumbsUp }
