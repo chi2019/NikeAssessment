@@ -56,11 +56,11 @@ class SearchRepositoryImplTest {
 
     companion object {
         private val TEST_LIST_ITEM_1 = ListItem(
-            0, listOf(), 12, "james", "12-09-1992", "", "", 11, "", "", ""
+            0, "", 12
         )
 
         private val TEST_LIST_ITEM_2 = ListItem(
-            1, listOf(), 10, "aurthur", "12-09-1992", "", "", 16, "", "", ""
+            1, "", 10
         )
 
         private val TEST_SEARCH_RESPONSE =
